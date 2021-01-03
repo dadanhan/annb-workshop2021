@@ -27,6 +27,8 @@ It usually is that simple! (Trust me, it was a lot harder before)...Detailed ins
 
 ## 2. Basic supervised neural network
 
+There is a plethora of information/documentation/tutorials online. So much so that it actually serves as a barrier to entry in some cases. Here we will go through a simplified tutorial of a simple, densely-connected supervised neural network to classify images. Consider this as a 'hello world' tutorial to Tensorflow. (The tutorial I based this off can be found [here](https://www.tensorflow.org/tutorials/keras/classification))
+
 ## 3. Basic unsupervised neural network: Self-Organized Map (SOM)
 
 ## 4. Using a supervised neural network for trajectory analysis
