@@ -8,3 +8,4 @@ This is a basic workshop showing you how to:
 4. create and train basic supervised neural networks in tensorflow on time series and apply this to tracking data of endosomes
 
 Let's begin with installation.
+\bold 1. Setup
