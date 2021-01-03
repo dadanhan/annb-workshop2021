@@ -25,8 +25,13 @@ pip install tensorflow
 
 It usually is that simple! (Trust me, it was a lot harder before)...Detailed installation instructions for Tensorflow can be found [here](https://www.tensorflow.org/install).
 
-## 2. Basic supervised neural network: 
+## 2. Basic supervised neural network
 
 ## 3. Basic unsupervised neural network: Self-Organized Map (SOM)
 
-## 4. Using a supervised neural network 
+## 4. Using a supervised neural network for trajectory analysis
+
+The associated eLife paper to this neural network can be found [here](https://elifesciences.org/articles/52224)
+
+Sample equation
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
