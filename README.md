@@ -45,6 +45,8 @@ To extend this idea, now consider <img src="https://render.githubusercontent.com
 
 The next natural extension to this is to have several neurons forming a 'layer' and then adding 'deep' layers which use the outputs of a layer of neurons as inputs into a subsequent layer of neurons. This can be expanded to infinity (or the power of your computer).
 
+Now, how do we 'train' this network. In other words, how do we determine the values of the weights <img src="https://render.githubusercontent.com/render/math?math=(w_1,w_2,...,w_n)"> so that our neural network gives us the predictions from an input of <img src="https://render.githubusercontent.com/render/math?math=(x_1,x_2,...,x_n)">?
+
 ## 3. Basic unsupervised neural network: Self-Organized Map (SOM)
 
 ## 4. Using a supervised neural network for trajectory analysis
