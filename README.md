@@ -33,6 +33,9 @@ There is a plethora of information/documentation/tutorials online. So much so th
 
 The entire code is saved in the basic_supervised.py file. We will go through this line by line in the tutorial.
 
+### Key concepts behind supervised neural networks
+
+
 ## 3. Basic unsupervised neural network: Self-Organized Map (SOM)
 
 ## 4. Using a supervised neural network for trajectory analysis
