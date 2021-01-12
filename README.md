@@ -33,8 +33,16 @@ There is a plethora of information/documentation/tutorials online. So much so th
 
 The entire code is saved in the basic_supervised.py file. We will go through this line by line in the tutorial.
 
-### Key concepts behind supervised neural networks
+#### Key concepts behind supervised neural networks
 
+A neural network is just a mathematical operation. In essence, a single neuron with an input <img src="https://render.githubusercontent.com/render/math?math=x"> estimates some desired quantity <img src="https://render.githubusercontent.com/render/math?math=y"> using weights <img src="https://render.githubusercontent.com/render/math?math=w"> and bias <img src="https://render.githubusercontent.com/render/math?math=b">. To do this, we use a simple linear function:
+
+<img src="https://render.githubusercontent.com/render/math?math=y = wx %2B b">
+
+But this is boring, it's just a linear function. To form a useful neural network, we need to have multiple neurons working in parallel with a series of inputs.
+
+
+We can extend this by adding 'deep' layers which use the outputs of a layer of neurons as inputs into a subsequent layer of neurons. This can be expanded to infinity (or the power of your computer).
 
 ## 3. Basic unsupervised neural network: Self-Organized Map (SOM)
 
