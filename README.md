@@ -39,10 +39,11 @@ A neural network is just a mathematical operation. In essence, a single neuron w
 
 <img src="https://render.githubusercontent.com/render/math?math=y = wx %2B b">
 
-But this is boring, it's just a linear function. To form a useful neural network, we need to have multiple neurons working in parallel with a series of inputs.
+To extend this idea, now consider <img src="https://render.githubusercontent.com/render/math?math=n"> inputs <img src="https://render.githubusercontent.com/render/math?math=(x_1,x_2,...,x_n)"> to the neuron that still estimates some desired quantity <img src="https://render.githubusercontent.com/render/math?math=y">. Since we have <img src="https://render.githubusercontent.com/render/math?math=n"> inputs, we must also have a corresponding number of weights <img src="https://render.githubusercontent.com/render/math?math=(w_1,w_2,...,w_n)">. Then the simple linear function from before becomes:
 
+<img src="https://render.githubusercontent.com/render/math?math=y%20=%20\sum_i%20w_i%20x_i%20%2B%20w">
 
-We can extend this by adding 'deep' layers which use the outputs of a layer of neurons as inputs into a subsequent layer of neurons. This can be expanded to infinity (or the power of your computer).
+The next natural extension to this is to have several neurons forming a 'layer' and then adding 'deep' layers which use the outputs of a layer of neurons as inputs into a subsequent layer of neurons. This can be expanded to infinity (or the power of your computer).
 
 ## 3. Basic unsupervised neural network: Self-Organized Map (SOM)
 
