@@ -22,6 +22,10 @@ To install Tensorflow on your computer, make sure that Python3 is installed and 
 ```python3
 pip install tensorflow
 ```
+or
+```python3
+python3 -m pip install tensorflow
+```
 
 It usually is that simple! (Trust me, it was a lot harder before)...Detailed installation instructions for Tensorflow can be found [here](https://www.tensorflow.org/install).
 
@@ -55,6 +59,16 @@ To do this, we need a cost function that measures the deviation of the estimated
 Here, <img src="https://render.githubusercontent.com/render/math?math=r "> is the learning rate. We repeatedly perform these weight and bias modifications until a certain criteria (termination condition) is met.
 
 ## 3. Basic unsupervised neural network: Self-Organized Map (SOM)
+
+For this code, you will need to install OpenCV. You can do this by typing in your terminal/shell/PowerShell:
+
+```python3
+pip install opencv-python
+```
+or
+```python3
+python3 -m pip install opencv-python
+```
 
 ## 4. Using a supervised neural network for trajectory analysis
 
