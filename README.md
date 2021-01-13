@@ -41,11 +41,14 @@ A neural network is just a mathematical operation. In essence, a single neuron w
 
 To extend this idea, now consider <img src="https://render.githubusercontent.com/render/math?math=n"> inputs <img src="https://render.githubusercontent.com/render/math?math=(x_1,x_2,...,x_n)"> to the neuron that still estimates some desired quantity <img src="https://render.githubusercontent.com/render/math?math=y">. Since we have <img src="https://render.githubusercontent.com/render/math?math=n"> inputs, we must also have a corresponding number of weights <img src="https://render.githubusercontent.com/render/math?math=(w_1,w_2,...,w_n)">. Then the simple linear function from before becomes:
 
-<img src="https://render.githubusercontent.com/render/math?math=y%20=%20\sum_i%20w_i%20x_i%20%2B%20w">
+<img src="https://render.githubusercontent.com/render/math?math=y=\sum_i w_i x_i %2B b">
 
 The next natural extension to this is to have several neurons forming a 'layer' and then adding 'deep' layers which use the outputs of a layer of neurons as inputs into a subsequent layer of neurons. This can be expanded to infinity (or the power of your computer).
 
-Now, how do we 'train' this network. In other words, how do we determine the values of the weights <img src="https://render.githubusercontent.com/render/math?math=(w_1,w_2,...,w_n)"> so that our neural network gives us the predictions from an input of <img src="https://render.githubusercontent.com/render/math?math=(x_1,x_2,...,x_n)">?
+Now, how do we 'train' this network. In other words, how do we determine the values of the weights <img src="https://render.githubusercontent.com/render/math?math=(w_1,w_2,...,w_n)"> so that our neural network gives us the predictions <img src="https://render.githubusercontent.com/render/math?math=y"> from an input of <img src="https://render.githubusercontent.com/render/math?math=(x_1,x_2,...,x_n)">? How do we change the weights given we can compare our prediction <img src="https://render.githubusercontent.com/render/math?math=y"> and the true value <img src="https://render.githubusercontent.com/render/math?math=t">?
+
+To do this, we need a cost function. For simplicity we will just define it as the squared error <img src="https://render.githubusercontent.com/render/math?math=C = (y%2Dt)^2">
+
 
 ## 3. Basic unsupervised neural network: Self-Organized Map (SOM)
 
