@@ -47,8 +47,12 @@ The next natural extension to this is to have several neurons forming a 'layer' 
 
 Now, how do we 'train' this network. In other words, how do we determine the values of the weights <img src="https://render.githubusercontent.com/render/math?math=(w_1,w_2,...,w_n)"> so that our neural network gives us the predictions <img src="https://render.githubusercontent.com/render/math?math=y"> from an input of <img src="https://render.githubusercontent.com/render/math?math=(x_1,x_2,...,x_n)">? How do we change the weights given we can compare our prediction <img src="https://render.githubusercontent.com/render/math?math=y"> and the true value <img src="https://render.githubusercontent.com/render/math?math=t">?
 
-To do this, we need a cost function. For simplicity we will just define it as the squared error <img src="https://render.githubusercontent.com/render/math?math=C = (y%2Dt)^2">
+To do this, we need a cost function that measures the deviation of the estimated value <img src="https://render.githubusercontent.com/render/math?math=y"> from the true value <img src="https://render.githubusercontent.com/render/math?math=t">. For simplicity, we will just define it as the squared error <img src="https://render.githubusercontent.com/render/math?math=C = (y%2Dt)^2"> but you can define the cost function differently. Since the cost function is a function of <img src="https://render.githubusercontent.com/render/math?math=y">, it also depends on the weights and bias. For the simplest case above, we would update the weight and bias by
 
+<img src="https://render.githubusercontent.com/render/math?math=w_{new} = w - r \frac{\partial C}{\partial w} ">
+<img src="https://render.githubusercontent.com/render/math?math=b_{new} = b - r \frac{\partial C}{\partial b} ">
+
+Here, <img src="https://render.githubusercontent.com/render/math?math=r "> is the learning rate. We repeatedly perform these weight and bias modifications until a certain criteria (termination condition) is met.
 
 ## 3. Basic unsupervised neural network: Self-Organized Map (SOM)
 
