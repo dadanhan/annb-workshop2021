@@ -69,7 +69,11 @@ or
 ```python3
 python3 -m pip install opencv-python
 ```
-The entire code for a SOM is saved in the basic_unsupervised_som.py file. In addition, you will need the hannah_er.tif and the hannah_rab5.tif files, which will be analysed/classified into neuron groups by our SOM.
+The entire code for a SOM is saved in the basic_unsupervised_som.py file. In addition, you will need the hannah_er.tif and the hannah_rab5.tif files, which will be analysed/classified into neuron groups by our SOM. We will go through this code, line by line, in the tutorial.
+
+#### Key concepts behind SOMs
+
+
 
 ## 4. Using a supervised neural network for trajectory analysis
 
