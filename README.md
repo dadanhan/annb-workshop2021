@@ -10,9 +10,9 @@ This is a basic workshop showing you how to:
 Let's begin with installation.
 
 ## 1. Setup
-You can download the latest version of Python3 for different operating systems [here](https://www.python.org/downloads/).
+You can download the latest version of Python3 for different operating systems [here](https://www.python.org/downloads/). Make sure you use Python **3.8.7** and NOT Python 3.9.1 as there seems to be a problem with the latest release and Tensorflow.
 
-Download it and install Python3 on your computer. Alternatively if you want to work online, you can setup a AWS cloud account [here](https://aws.amazon.com/console/) or Google cloud account [here](https://cloud.google.com/) and work on a Cloud Shell (basically a computer maintained by Google but operated by you online).
+Download it and install Python3 on your computer. Alternatively if you want to work online, you can setup a AWS cloud account [here](https://aws.amazon.com/console/) or Google cloud account [here](https://cloud.google.com/) and work on a Cloud Shell (basically a computer maintained by them but operated by you online).
 
 Help during installation can be found online.
 (e.g. [here](https://realpython.com/installing-python/#how-to-install-python-on-windows))
