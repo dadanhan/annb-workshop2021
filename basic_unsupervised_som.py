@@ -8,7 +8,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #read in image
-filename = 'hannah_er.tif'
+# filename = 'hannahperkins_er.tif'
+filename = 'hannahperkins_rab5.tif'
 im = cv2.imread(filename,-1)
 #crop and normalize image
 im = im[250:350,250:350]
