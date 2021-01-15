@@ -73,7 +73,7 @@ For this section, you will first need to install the Python3 package 'stochastic
 ```python
 pip install stochastic
 ```
-For documentation see [here](https://stochastic.readthedocs.io/en/stable/).
+For documentation on the 'stochastic' package see [here](https://stochastic.readthedocs.io/en/stable/).
 
 The associated eLife paper to this neural network can be found [here](https://elifesciences.org/articles/52224)
 
