@@ -22,10 +22,6 @@ To install Tensorflow on your computer, make sure that Python3 is installed and 
 ```python3
 pip install tensorflow
 ```
-or
-```python3
-python3 -m pip install tensorflow
-```
 
 It usually is that simple! (Trust me, it was a lot harder before)...Detailed installation instructions for Tensorflow can be found [here](https://www.tensorflow.org/install).
 
@@ -65,10 +61,6 @@ For this code, you will need to install OpenCV. You can do this by typing in you
 ```python3
 pip install opencv-python
 ```
-or
-```python3
-python3 -m pip install opencv-python
-```
 The entire code for a SOM is saved in the basic_unsupervised_som.py file. In addition, you will need the hannahperkins_er.tif and the hannahperkins_rab5.tif files, which will be analysed/classified into neuron groups by our SOM. We will go through this code, line by line, in the tutorial.
 
 #### Key concepts behind SOMs
@@ -76,6 +68,12 @@ The entire code for a SOM is saved in the basic_unsupervised_som.py file. In add
 
 
 ## 4. Using a supervised neural network for trajectory analysis
+
+For this section, you will first need to install the Python3 package 'stochastic' by using the command:
+```python
+pip install stochastic
+```
+For documentation see [here](https://stochastic.readthedocs.io/en/stable/).
 
 The associated eLife paper to this neural network can be found [here](https://elifesciences.org/articles/52224)
 
