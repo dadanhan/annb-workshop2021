@@ -69,10 +69,16 @@ The entire code for a SOM is saved in the basic_unsupervised_som.py file. In add
 
 ## 4. Using a supervised neural network for trajectory analysis
 
-For this section, you will first need to install the Python3 package 'stochastic' by using the command:
+For this section, you will first need to install the Python3 package 'stochastic' and 'pandas' by using the command:
 ```python
 pip install stochastic
 ```
+followed by
+```python
+pip install pandas
+```
 For documentation on the 'stochastic' package see [here](https://stochastic.readthedocs.io/en/stable/).
+
+The complete code that you will need to generate trained neural networks is in 'supervised_nn_fbm_train.py' and the code to plot the prediction results are in 'supervised_nn_fbm_plotresults.py'.
 
 The associated eLife paper to this neural network can be found [here](https://elifesciences.org/articles/52224)
