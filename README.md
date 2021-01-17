@@ -76,6 +76,3 @@ pip install stochastic
 For documentation on the 'stochastic' package see [here](https://stochastic.readthedocs.io/en/stable/).
 
 The associated eLife paper to this neural network can be found [here](https://elifesciences.org/articles/52224)
-
-Sample equation
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
