@@ -81,4 +81,4 @@ For documentation on the 'stochastic' package see [here](https://stochastic.read
 
 The complete code that you will need to generate trained neural networks is in 'supervised_nn_fbm_train.py' and the code to plot the prediction results are in 'supervised_nn_fbm_plotresults.py'.
 
-The associated eLife paper to this neural network can be found [here](https://elifesciences.org/articles/52224)
+For an example of how to apply this trained neural network to real experimental data you will need to download the dataset 'rab5traj.csv' and 'supervised_nn_fbm_realtrajectory.py'. The data is from tracked microscopy videos of fluorescently tagged endosomes in living cells. The associated eLife paper to this work is [here](https://elifesciences.org/articles/52224)
