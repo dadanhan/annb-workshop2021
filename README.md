@@ -66,7 +66,7 @@ The entire code for a SOM is saved in the basic_unsupervised_som.py file. In add
 #### Key concepts behind SOMs
 A Self-Organized Map (SOM) is made up of neurons competing with each other for different matching features in the data through sampling individual data points. If the weights of a single neuron is <img src="https://render.githubusercontent.com/render/math?math=w = (w_1,w_2,...,w_n)"> and the sampled data point has values <img src="https://render.githubusercontent.com/render/math?math=x = (x_1,x_2,...,x_n)">, then the weights are updated by the equation
 
-<img src="https://render.githubusercontent.com/render/math?math=w_{new} = w %2B \alpha \times (x-w) \times \theta(w_{bmu}-w)">
+<img src="https://render.githubusercontent.com/render/math?math=w_{new} = w %2B r \times (x-w) \times \theta(w_{bmu}-w)">
 
 where <img src="https://render.githubusercontent.com/render/math?math=r"> is the learning rate, <img src="https://render.githubusercontent.com/render/math?math=\theta(w_{bmu}-w)"> is the neighborhood function and <img src="https://render.githubusercontent.com/render/math?math=w_{bmu}"> are the weights of the Best Matching Unit (BMU). The BMU is the neuron with weights that are the closest (using some distance metric) to the data sample <img src="https://render.githubusercontent.com/render/math?math=x">. Updating the weights with randomly sampled data points repetitively leads to the SOM learning the best neuron representation of the data.
 
