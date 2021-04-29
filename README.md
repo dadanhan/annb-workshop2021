@@ -68,7 +68,7 @@ A Self-Organized Map (SOM) is made up of neurons competing with each other for d
 
 <img src="https://render.githubusercontent.com/render/math?math=w_{new} = w %2B \alpha \times (x-w) \times \theta(w_{bmu}-w)">
 
-where <img src="https://render.githubusercontent.com/render/math?math=\alpha"> is the learning rate, <img src="https://render.githubusercontent.com/render/math?math=\theta(w_{bmu}-w)"> is the neighborhood function and <img src="https://render.githubusercontent.com/render/math?math=w_{bmu}"> are the weights of the Best Matching Unit (BMU). The BMU is the neuron with weights that are the closest (using some distance metric) to the data sample <img src="https://render.githubusercontent.com/render/math?math=x">. Updating the weights with randomly sampled data points repetitively leads to the SOM learning the best neuron representation of the data.
+where <img src="https://render.githubusercontent.com/render/math?math=r"> is the learning rate, <img src="https://render.githubusercontent.com/render/math?math=\theta(w_{bmu}-w)"> is the neighborhood function and <img src="https://render.githubusercontent.com/render/math?math=w_{bmu}"> are the weights of the Best Matching Unit (BMU). The BMU is the neuron with weights that are the closest (using some distance metric) to the data sample <img src="https://render.githubusercontent.com/render/math?math=x">. Updating the weights with randomly sampled data points repetitively leads to the SOM learning the best neuron representation of the data.
 
 ## 4. Using a supervised neural network for trajectory analysis
 
