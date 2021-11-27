@@ -50,6 +50,7 @@ Now, how do we 'train' this network. In other words, how do we determine the val
 To do this, we need a cost function that measures the deviation of the estimated value from the true value. For simplicity, we will just define it as the squared error C = (y - t)<sup>2</sup> but you can define the cost function differently. Since the cost function is a function of y, it also depends on the weights and bias. For the simplest case above, we would update the weight and bias by
 
 **w**<sub>new</sub> = **w** - r dC/d**w**
+
 b<sub>new</sub> = b - r dC/db
 
 Here, r is the learning rate. We repeatedly perform these weight and bias modifications until a certain criteria (termination condition) is met.
