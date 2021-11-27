@@ -27,6 +27,8 @@ It usually is that simple! (Trust me, it was a lot harder before)...Detailed ins
 
 To write our code and save them as .py scripts, you will need a text editor. I strongly recommend [Visual Studio Code](https://code.visualstudio.com/). Alternatively, you can use any text editor.
 
+ h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
+ 
 ## 2. Basic supervised neural network
 
 There is a plethora of information/documentation/tutorials online. So much so that it actually serves as a barrier to entry in some cases. Here we will go through a simplified tutorial of a simple, densely-connected supervised neural network to classify images. Consider this as a 'hello world' tutorial to Tensorflow. (The tutorial I based this off can be found [here](https://www.tensorflow.org/tutorials/keras/classification))
