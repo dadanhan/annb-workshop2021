@@ -26,8 +26,6 @@ pip install tensorflow
 It usually is that simple! (Trust me, it was a lot harder before)...Detailed installation instructions for Tensorflow can be found [here](https://www.tensorflow.org/install).
 
 To write our code and save them as .py scripts, you will need a text editor. I strongly recommend [Visual Studio Code](https://code.visualstudio.com/). Alternatively, you can use any text editor.
-
- h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
  
 ## 2. Basic supervised neural network
 
@@ -49,9 +47,9 @@ The next natural extension to this is to have several neurons forming a 'layer' 
 
 Now, how do we 'train' this network. In other words, how do we determine the values of the weights (w<sub>1</sub>,w<sub>2</sub>,...,w<sub>n</sub>) so that our neural network gives us the predictions **y** from an input of (x<sub>1</sub>,x<sub>2</sub>,...,x<sub>n</sub>)? How do we change the weights given we can compare our prediction **y** and the true value **t**?
 
-To do this, we need a cost function that measures the deviation of the estimated value from the true value. For simplicity, we will just define it as the squared error C = y - t)<sup>2</sup> but you can define the cost function differently. Since the cost function is a function of <img src="https://render.githubusercontent.com/render/math?math=y">, it also depends on the weights and bias. For the simplest case above, we would update the weight and bias by
+To do this, we need a cost function that measures the deviation of the estimated value from the true value. For simplicity, we will just define it as the squared error C = (y - t)<sup>2</sup> but you can define the cost function differently. Since the cost function is a function of y, it also depends on the weights and bias. For the simplest case above, we would update the weight and bias by
 
-<img src="https://render.githubusercontent.com/render/math?math=w_{new} = w - r \frac{\partial C}{\partial w} ">
+w<sub>new</sub> = w - r &\partial; C / &\partial; w
 <img src="https://render.githubusercontent.com/render/math?math=b_{new} = b - r \frac{\partial C}{\partial b} ">
 
 Here, <img src="https://render.githubusercontent.com/render/math?math=r "> is the learning rate. We repeatedly perform these weight and bias modifications until a certain criteria (termination condition) is met.
