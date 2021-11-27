@@ -49,10 +49,10 @@ Now, how do we 'train' this network. In other words, how do we determine the val
 
 To do this, we need a cost function that measures the deviation of the estimated value from the true value. For simplicity, we will just define it as the squared error C = (y - t)<sup>2</sup> but you can define the cost function differently. Since the cost function is a function of y, it also depends on the weights and bias. For the simplest case above, we would update the weight and bias by
 
-w<sub>new</sub> = w - r &\partial; C / &\partial; w
-<img src="https://render.githubusercontent.com/render/math?math=b_{new} = b - r \frac{\partial C}{\partial b} ">
+**w**<sub>new</sub> = **w** - r dC/d**w**
+b<sub>new</sub> = b - r dC/db
 
-Here, <img src="https://render.githubusercontent.com/render/math?math=r "> is the learning rate. We repeatedly perform these weight and bias modifications until a certain criteria (termination condition) is met.
+Here, r is the learning rate. We repeatedly perform these weight and bias modifications until a certain criteria (termination condition) is met.
 
 ## 3. Basic unsupervised neural network: Self-Organized Map (SOM)
 
@@ -64,11 +64,11 @@ pip install opencv-python
 The entire code for a SOM is saved in the basic_unsupervised_som.py file. In addition, you will need the hannahperkins_er.tif and the hannahperkins_rab5.tif files, which will be analysed/classified into neuron groups by our SOM. We will go through this code, line by line, in the tutorial.
 
 #### Key concepts behind SOMs
-A Self-Organized Map (SOM) is made up of neurons competing with each other for different matching features in the data through sampling individual data points. If the weights of a single neuron is <img src="https://render.githubusercontent.com/render/math?math=w = (w_1,w_2,...,w_n)"> and the sampled data point has values <img src="https://render.githubusercontent.com/render/math?math=x = (x_1,x_2,...,x_n)">, then the weights are updated by the equation
+A Self-Organized Map (SOM) is made up of neurons competing with each other for different matching features in the data through sampling individual data points. If the weights of a single neuron is **w**=(w<sub>1</sub>,w<sub>2</sub>,...,w<sub>n</sub>) and the sampled data point has values **x**=(x<sub>1</sub>,x<sub>2</sub>,...,x<sub>n</sub>), then the weights are updated by the equation
 
-<img src="https://render.githubusercontent.com/render/math?math=w_{new} = w %2B r \times (x-w) \times \theta(w_{bmu}-w)">
+**w**<sub>new</sub> = **w** - r  (**x**-**w**)  &theta;(**w**<sub>bmu</sub>-**w**)
 
-where <img src="https://render.githubusercontent.com/render/math?math=r"> is the learning rate, <img src="https://render.githubusercontent.com/render/math?math=\theta(w_{bmu}-w)"> is the neighborhood function and <img src="https://render.githubusercontent.com/render/math?math=w_{bmu}"> are the weights of the Best Matching Unit (BMU). The BMU is the neuron with weights that are the closest (using some distance metric) to the data sample <img src="https://render.githubusercontent.com/render/math?math=x">. Updating the weights with randomly sampled data points repetitively leads to the SOM learning the best neuron representation of the data.
+where r is the learning rate, &theta;(**w**<sub>bmu</sub>-**w**) is the neighborhood function and **w**<sub>bmu</sub> are the weights of the Best Matching Unit (BMU). The BMU is the neuron with weights that are the closest (using some distance metric) to the data sample. Updating the weights with randomly sampled data points repetitively leads to the SOM learning the best neuron representation of the data.
 
 ## 4. Using a supervised neural network for trajectory analysis
 
