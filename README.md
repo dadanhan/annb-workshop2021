@@ -41,15 +41,15 @@ A neural network is just a mathematical operation. In essence, a single neuron w
 
 **y** = **wx** + b
 
-To extend this idea, now consider n inputs **x**=(x<sub>1</sub>,x<sub>2</sub>,...,x<sub>n</sub>)"> to the neuron that still estimates some desired quantity **y**. Since we have n inputs, we must also have a corresponding number of weights **w**=(w<sub>1</sub>,w<sub>2</sub>,...,w<sub>n</sub>)">. Then the simple linear function from before becomes:
+To extend this idea, now consider n inputs **x**=(x<sub>1</sub>,x<sub>2</sub>,...,x<sub>n</sub>) to the neuron that still estimates some desired quantity **y**. Since we have n inputs, we must also have a corresponding number of weights **w**=(w<sub>1</sub>,w<sub>2</sub>,...,w<sub>n</sub>). Then the simple linear function from before becomes:
 
-y=&Sigma;<sub>i</sub> w<sub>i</sub> x<sub>i</sub> + b">
+y=&Sigma;<sub>i</sub> w<sub>i</sub> x<sub>i</sub> + b
 
 The next natural extension to this is to have several neurons forming a 'layer' and then adding 'deep' layers which use the outputs of a layer of neurons as inputs into a subsequent layer of neurons. This can be expanded to infinity (or the power of your computer).
 
-Now, how do we 'train' this network. In other words, how do we determine the values of the weights <img src="https://render.githubusercontent.com/render/math?math=(w_1,w_2,...,w_n)"> so that our neural network gives us the predictions <img src="https://render.githubusercontent.com/render/math?math=y"> from an input of <img src="https://render.githubusercontent.com/render/math?math=(x_1,x_2,...,x_n)">? How do we change the weights given we can compare our prediction <img src="https://render.githubusercontent.com/render/math?math=y"> and the true value <img src="https://render.githubusercontent.com/render/math?math=t">?
+Now, how do we 'train' this network. In other words, how do we determine the values of the weights (w<sub>1</sub>,w<sub>2</sub>,...,w<sub>n</sub>) so that our neural network gives us the predictions **y** from an input of (x<sub>1</sub>,x<sub>2</sub>,...,x<sub>n</sub>)? How do we change the weights given we can compare our prediction **y** and the true value **t**?
 
-To do this, we need a cost function that measures the deviation of the estimated value <img src="https://render.githubusercontent.com/render/math?math=y"> from the true value <img src="https://render.githubusercontent.com/render/math?math=t">. For simplicity, we will just define it as the squared error <img src="https://render.githubusercontent.com/render/math?math=C = (y%2Dt)^2"> but you can define the cost function differently. Since the cost function is a function of <img src="https://render.githubusercontent.com/render/math?math=y">, it also depends on the weights and bias. For the simplest case above, we would update the weight and bias by
+To do this, we need a cost function that measures the deviation of the estimated value from the true value. For simplicity, we will just define it as the squared error C = y - t)<sup>2</sup> but you can define the cost function differently. Since the cost function is a function of <img src="https://render.githubusercontent.com/render/math?math=y">, it also depends on the weights and bias. For the simplest case above, we would update the weight and bias by
 
 <img src="https://render.githubusercontent.com/render/math?math=w_{new} = w - r \frac{\partial C}{\partial w} ">
 <img src="https://render.githubusercontent.com/render/math?math=b_{new} = b - r \frac{\partial C}{\partial b} ">
