@@ -37,11 +37,11 @@ The entire code is saved in the basic_supervised.py file.
 
 #### Key concepts behind supervised neural networks
 
-A neural network is just a mathematical operation. In essence, a single neuron with an input <img src="https://render.githubusercontent.com/render/math?math=x"> estimates some desired quantity <img src="https://render.githubusercontent.com/render/math?math=y"> using weights <img src="https://render.githubusercontent.com/render/math?math=w"> and bias <img src="https://render.githubusercontent.com/render/math?math=b">. To do this, we use a simple linear function:
+A neural network is just a mathematical operation. In essence, a single neuron with an input **x** estimates some desired quantity **y** using weights **w** and bias b. To do this, we use a simple linear function:
 
-<img src="https://render.githubusercontent.com/render/math?math=y = wx %2B b">
+**y** = **wx** + b
 
-To extend this idea, now consider <img src="https://render.githubusercontent.com/render/math?math=n"> inputs <img src="https://render.githubusercontent.com/render/math?math=(x_1,x_2,...,x_n)"> to the neuron that still estimates some desired quantity <img src="https://render.githubusercontent.com/render/math?math=y">. Since we have <img src="https://render.githubusercontent.com/render/math?math=n"> inputs, we must also have a corresponding number of weights <img src="https://render.githubusercontent.com/render/math?math=(w_1,w_2,...,w_n)">. Then the simple linear function from before becomes:
+To extend this idea, now consider n inputs **x**=(x</sub1>,x</sub>2,...,x</sub>n)"> to the neuron that still estimates some desired quantity **y**. Since we have n inputs, we must also have a corresponding number of weights **w**=(w</sub>1,w</sub>2,...,w</sub>n)">. Then the simple linear function from before becomes:
 
 <img src="https://render.githubusercontent.com/render/math?math=y=\sum_i w_i x_i %2B b">
 
