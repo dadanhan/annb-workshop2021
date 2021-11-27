@@ -41,9 +41,9 @@ A neural network is just a mathematical operation. In essence, a single neuron w
 
 **y** = **wx** + b
 
-To extend this idea, now consider n inputs **x**=(x</sub1>,x</sub>2,...,x</sub>n)"> to the neuron that still estimates some desired quantity **y**. Since we have n inputs, we must also have a corresponding number of weights **w**=(w</sub>1,w</sub>2,...,w</sub>n)">. Then the simple linear function from before becomes:
+To extend this idea, now consider n inputs **x**=(x<sub>1</sub>,x<sub>2</sub>,...,x<sub>n</sub>)"> to the neuron that still estimates some desired quantity **y**. Since we have n inputs, we must also have a corresponding number of weights **w**=(w<sub>1</sub>,w<sub>2</sub>,...,w<sub>n</sub>)">. Then the simple linear function from before becomes:
 
-<img src="https://render.githubusercontent.com/render/math?math=y=\sum_i w_i x_i %2B b">
+y=&Sigma;<sub>i</sub> w<sub>i</sub> x<sub>i</sub> + b">
 
 The next natural extension to this is to have several neurons forming a 'layer' and then adding 'deep' layers which use the outputs of a layer of neurons as inputs into a subsequent layer of neurons. This can be expanded to infinity (or the power of your computer).
 
